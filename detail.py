@@ -35,7 +35,11 @@ while line:
     except OSError:
         print 'already exists'
 
-    html = get_html_with_selenium(url)
+    html = ""
+    try:
+        html = get_html_with_selenium(url)
+    except:
+        html = "Failed"
 
     with open(file, mode='w') as f2:
         f2.write(html)
