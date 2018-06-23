@@ -1,0 +1,6 @@
+detail/*
+!detail/.gitkeep
+index/*
+!index/.gitkeep
+game_detail_text
+game_detail_url
